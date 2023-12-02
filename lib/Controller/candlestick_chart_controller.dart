@@ -13,6 +13,7 @@ class CandleStickController extends GetxController{
   late Timer timer;
 
   Random random = Random();
+
   StreamController candlesStreamController = StreamController<List<Candle>>.broadcast();
   StreamController priceStreamController = StreamController<double>.broadcast();
   Stream get candlesStream => candlesStreamController.stream;
